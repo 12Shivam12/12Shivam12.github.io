@@ -15,7 +15,8 @@
   --first-color: hsl(300, 92%, 38%);
   --first-color-second:  hsl(300, 92%, 46%);
   /* --first-color-second: hsl(var(--hue-color), 69%, 61%); */
-  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  /* --first-color-alt: hsl(var(--hue-color), 57%, 53%); */
+  --first-color-alt: black;
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
@@ -182,10 +183,11 @@ img {
 .header {
   width: 100%;
   position: fixed;
-  bottom: 0;
+  /* bottom: 0; */
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
+  background-color:var(--first-color);
 }
 
 /*==================== NAV ====================*/
@@ -195,16 +197,19 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background-color:var(--first-color); */
 }
 
 .nav__logo,
 .nav__toggle {
-  color: var(--title-color);
+  /* color: var(--title-color); */
+  color: white;
   font-weight: var(--font-medium);
 }
 
 .nav__logo:hover {
-  color: var(--first-color);
+  /* color: var(--first-color); */
+  color: black;
 }
 
 .nav__toggle {
@@ -222,12 +227,16 @@ img {
     bottom: -100%;
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
+    background-color:var(--first-color) ;
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
   }
+
+
+
 }
 
 .nav__list {
@@ -239,12 +248,15 @@ img {
   flex-direction: column;
   align-items: center;
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  /* color: var(--title-color); */
+  color: white;
   font-weight: var(--font-medium);
 }
 
 .nav__link:hover {
-  color: var(--first-color);
+  /* color: var(--first-color); */
+  color: black;
+
 }
 
 .nav__icon {
@@ -257,7 +269,7 @@ img {
   bottom: 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--first-color);
+  color: white
 }
 
 .nav__close:hover {
@@ -989,7 +1001,7 @@ img {
 }
 
 .footer__link:hover {
-  color: var(--first-color-lighter);
+  color: black
 }
 
 .footer__social {
@@ -1012,7 +1024,7 @@ img {
 .footer__subtitle,
 .footer__link,
 .footer__social {
-  color: #fff;
+  color:white
 }
 
 /*========== SCROLL UP ==========*/
