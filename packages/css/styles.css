@@ -1,5 +1,6 @@
 /* ==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -10,8 +11,10 @@
   --hue-color: 190; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
-  --first-color: hsl(var(--hue-color), 69%, 61%);
-  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  /* --first-color: hsl(var(--hue-color), 69%, 61%); */
+  --first-color: hsl(300, 92%, 38%);
+  --first-color-second:  hsl(300, 92%, 46%);
+  /* --first-color-second: hsl(var(--hue-color), 69%, 61%); */
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -24,7 +27,8 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+  /* --body-font: "Poppins", sans-serif; */
+  --body-font: 'Geologica', sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
